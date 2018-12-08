@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="250dp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <EditText
+        android:id="@+id/etmeaning"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:ems="10"
+        android:hint="Meaning"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etword" />
+
+    <EditText
+        android:id="@+id/etword"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Word"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etmeaning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="33dp"
+        android:text="ADD"
+        app:layout_constraintBottom_toTopOf="@+id/butwords"
+        app:layout_constraintEnd_toStartOf="@+id/butmeaning"
+        app:layout_constraintStart_toStartOf="@+id/butmeaning"
+        app:layout_constraintTop_toBottomOf="@+id/etmeaning" />
+
+    <Button
+        android:id="@+id/butwords"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginStart="29dp"
+        android:text="Edit Words"
+        app:layout_constraintBottom_toTopOf="@+id/butall"
+        app:layout_constraintEnd_toStartOf="@+id/butmeaning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/butmeaning"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="Edit Meanings"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butwords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/butwords" />
+
+    <Button
+        android:id="@+id/butall"
+        android:layout_width="326dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="56dp"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butmeaning"
+        app:layout_constraintStart_toStartOf="@+id/butmeaning"
+        app:layout_constraintTop_toBottomOf="@+id/butwords" />
+
+
+</android.support.constraint.ConstraintLayout>
